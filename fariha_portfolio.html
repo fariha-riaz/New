@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fariha Riaz | LinkedIn Ghostwriter & Content Expert</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(180deg, #fff, #ffe6e9);
+            color: #222;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(120deg, #FFC2C7, #ff6f7b);
+            padding: 80px 20px;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            font-weight: 700;
+        }
+        header p { font-size: 1.3rem; margin-top: 15px; }
+        nav { margin-top: 30px; }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 0 20px;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+        nav a:hover { color: #000; }
+        section { padding: 80px 20px; max-width: 1200px; margin: auto; }
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 50px;
+            text-align: center;
+            color: #ff6f7b;
+            position: relative;
+        }
+        h2::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background: #ff6f7b;
+            display: block;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+        .image-placeholder {
+            background: linear-gradient(145deg, #e6e6e6, #ffffff);
+            border-radius: 20px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.1), -5px -5px 15px rgba(255,255,255,0.8);
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .service-box {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+        .service-box:hover { transform: translateY(-10px); }
+        .price-tag {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #ff6f7b;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        .service-box h3 { color: #ff6f7b; margin-bottom: 15px; }
+        ul { list-style: none; margin-bottom: 20px; }
+        ul li::before { content: '✔'; color: #ff6f7b; margin-right: 8px; }
+        .btn {
+            display: inline-block;
+            background: #ff6f7b;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+        .btn:hover { background: #e85c68; }
+        .contact-section {
+            background: linear-gradient(120deg, #ffedf0, #ffe6e9);
+            padding: 60px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .contact-section p { margin-bottom: 10px; font-size: 1.1rem; }
+        footer {
+            background: #000;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+        }
+        .floating { position: absolute; border-radius: 50%; background: rgba(255,255,255,0.3); animation: float 6s ease-in-out infinite; }
+        @keyframes float { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-20px);} }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="floating" style="width:80px;height:80px;top:20px;left:20px;"></div>
+    <div class="floating" style="width:50px;height:50px;top:80px;right:40px;"></div>
+    <h1>Fariha Riaz</h1>
+    <p>LinkedIn Ghostwriter | Content Writer | LinkedIn Expert</p>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#work">My Work</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="image-placeholder">Your Photo Here</div>
+    <p style="text-align:center;max-width:800px;margin:auto;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac venenatis lorem, sed varius nisi. Praesent feugiat nulla nec justo egestas, nec dictum odio commodo. Integer tempor, orci id tristique tincidunt, ipsum lectus euismod nulla, sed varius libero nisl vel sapien.</p>
+</section>
+
+<section id="services">
+    <h2>My Services</h2>
+    <div class="services">
+        <div class="service-box">
+            <div class="price-tag">$199</div>
+            <h3>Coaching Call</h3>
+            <p>One-on-one coaching to optimize your LinkedIn profile, content strategy, and engagement tactics.</p>
+            <ul>
+                <li>Profile audit & feedback</li>
+                <li>Content strategy guidance</li>
+                <li>Engagement & networking tips</li>
+            </ul>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+        <div class="service-box">
+            <div class="price-tag">$499</div>
+            <h3>Brand & Profile Management</h3>
+            <p>Full management of your LinkedIn presence, from content creation to engagement.</p>
+            <ul>
+                <li>Complete profile optimization</li>
+                <li>Weekly content creation & posting</li>
+                <li>Engagement with your target audience</li>
+            </ul>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+    </div>
+</section>
+
+<section id="work">
+    <h2>My Work</h2>
+    <div class="image-placeholder">Portfolio Image 1</div>
+    <div class="image-placeholder">Portfolio Image 2</div>
+    <div class="image-placeholder">Portfolio Image 3</div>
+</section>
+
+<section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="image-placeholder">Client Testimonial 1</div>
+    <div class="image-placeholder">Client Testimonial 2</div>
+    <div class="image-placeholder">Client Testimonial 3</div>
+</section>
+
+<section id="contact">
+    <h2>Reach Out To Me</h2>
+    <div class="contact-section">
+        <p>📧 Email: <a href="mailto:hello@farihariaz.com">hello@farihariaz.com</a></p>
+        <p>💼 LinkedIn: <a href="https://linkedin.com/in/farihariaz" target="_blank">linkedin.com/in/farihariaz</a></p>
+        <p>📍 Location: Karachi, Pakistan</p>
+        <p>📅 Available: Mon - Fri | 9am - 6pm PKT</p>
+        <a href="#services" class="btn">Book a Service</a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Fariha Riaz. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
